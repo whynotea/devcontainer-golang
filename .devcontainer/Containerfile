@@ -1,0 +1,15 @@
+FROM ghcr.io/whynotea/devcontainer-base:v1.0.2
+
+USER root
+RUN curl -L https://go.dev/dl/go1.20.5.linux-amd64.tar.gz | tar -C /usr/local -xz
+USER code
+RUN zsh -ic "go install golang.org/x/tools/gopls@latest && \
+             go install honnef.co/go/tools/cmd/staticcheck@latest && \
+             go install golang.org/x/lint/golint@latest && \
+             go install github.com/mgechev/revive@latest && \
+             go install github.com/go-delve/delve/cmd/dlv@latest && \
+             go install github.com/fatih/gomodifytags@latest && \
+             go install github.com/haya14busa/goplay/cmd/goplay@latest && \
+             go install github.com/cweill/gotests/gotests@latest && \ 
+             go install github.com/josharian/impl@latest && \
+						 vim --headless '+q!'"

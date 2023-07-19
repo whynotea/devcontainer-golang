@@ -1,0 +1,28 @@
+{
+  "build": {
+    "dockerfile": "./Containerfile",
+    "context": "."
+  },
+    "features": {
+    },
+    "runArgs": [
+      "--security-opt",
+      "label=disable",
+      "--device",
+      "/dev/fuse",
+      "--userns=keep-id"
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "go.toolsManagement.checkForUpdates": "local",
+                "go.useLanguageServer": true,
+                "go.gopath": "/home/code/go"
+            },
+            "extensions": [
+                "golang.Go"
+            ]
+        }
+    },
+    "remoteUser": "code"
+}
