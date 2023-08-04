@@ -1,4 +1,4 @@
-FROM ghcr.io/whynotea/devcontainer-base:v1.0.2
+FROM ghcr.io/whynotea/devcontainer-base:v1.0.3
 
 USER root
 RUN curl -L https://go.dev/dl/go1.20.5.linux-amd64.tar.gz | tar -C /usr/local -xz
