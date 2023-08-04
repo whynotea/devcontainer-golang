@@ -15,4 +15,6 @@ RUN zsh -ic "go install golang.org/x/tools/gopls@latest && \
              go install github.com/goreleaser/goreleaser@v1.19.2 && \
              go install github.com/sigstore/cosign/v2/cmd/cosign@v2.1.1 && \
              go install github.com/anchore/syft/cmd/syft@v0.85.0 && \
+             chmod -R +w /home/code/go/pkg && \
+             rm -rf /home/code/go/pkg && \
              vim --headless '+q!'"
