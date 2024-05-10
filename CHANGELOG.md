@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/whynotea/devcontainer-golang/compare/v1.0.3...v1.0.4) (2024-05-10)
+
+
+### Bug Fixes
+
+* update to devcontainer-base 1.0.7 ([a5a7538](https://github.com/whynotea/devcontainer-golang/commit/a5a75387234d61103bd08b30a0a96507d527c3b6))
+
 ## [1.0.3](https://github.com/whynotea/devcontainer-golang/compare/v1.0.2...v1.0.3) (2024-05-03)
 
 
