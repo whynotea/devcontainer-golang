@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/whynotea/devcontainer-golang/compare/v1.0.5...v1.0.6) (2024-05-10)
+
+
+### Bug Fixes
+
+* update golang to v1.22.3 ([29d9ac0](https://github.com/whynotea/devcontainer-golang/commit/29d9ac0e5d9d379658c2972017f9682aae63f263))
+
 ## [1.0.5](https://github.com/whynotea/devcontainer-golang/compare/v1.0.4...v1.0.5) (2024-05-10)
 
 
